@@ -15,3 +15,12 @@ Use Node.js to run javascript code on somebody else's computer, or rather a serv
 4.- Execute the index.js file local in the command linde
 Hint: use the command "node"
 ```
+```
+The Node REPL (Read Evaluation Print Loops) allows you to exectue code in bite size chunks
+like what we did with the chrome developer tools console inside the chrome browser
+
+commands:
+node: Enter the REPL
+.exit: Exit the REPL
+You can also use "Control-C" to exit the routine
+```
