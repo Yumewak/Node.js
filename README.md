@@ -24,3 +24,31 @@ node: Enter the REPL
 .exit: Exit the REPL
 You can also use "Control-C" to exit the routine
 ```
+
+## How to use native Node modules
+```
+Node comes bundled with built in modules, these are libraries of code
+We can use Node.js to get access directly to the local files of the computer
+
+Enter the link below this lecture https://nodejs.org/api/fs.html and acces to the
+file system: This helps you interact with the local file system using Node
+```
+```javascript
+//fs stand for file system but you can call this constant whatever you want like "fileSystem"
+//And we're going to set it to equal the file system module
+//In order to use libraries of code, or modules, or packages inside our project we have to require the module
+const fs = require("fs")
+
+//Things that you can do: for example, Specify paths, Open files, Change files, Access and read and wirte to the local file system
+//Inside visual studio create a new "file1.txt" wit some random text
+
+//Use method "copyFileSync" in order to create a copy of the file
+fs.copyFileSync(src, dest[, mode]) //src, dest[, mode]are parameters "source" and "destination"
+
+const fs = require("fs");
+fs.copyFileSync("file1.txt", "file2.txt");
+```
+```
+From the terminal execute the index.js that contains the code, see how a new file2.txt is created
+This code will create a new one if there is no "file2.txt" and overwritten if alredy are one
+```
